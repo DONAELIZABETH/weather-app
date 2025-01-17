@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+  display: grid;
+  background: linear-gradient(45deg, #87CEEB, #4682B4); /* Light Sky Blue to Steel Blue */
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  place-items: center;
+  padding: 20px; /* For small screen padding */
+  text-align: center;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app {
+    padding: 40px 20px;
+    background-size: 300% 300%; /* Slightly adjust the animation size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 20px;
+    background-size: 200% 200%;
+  }
+}
