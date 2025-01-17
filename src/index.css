@@ -36,17 +36,20 @@ body {
   }
 }
 
-/* Responsive Design */
+
+/* Responsive Design for .app */
 @media (max-width: 768px) {
   .app {
-    padding: 40px 20px;
-    background-size: 300% 300%; /* Slightly adjust the animation size for smaller screens */
+    padding: 30px; /* Reduced padding for tablets */
+    background-size: 300% 300%; /* Adjust gradient animation size for medium screens */
   }
 }
 
 @media (max-width: 480px) {
   .app {
-    padding: 20px;
-    background-size: 200% 200%;
+    padding: 15px; /* Compact padding for smaller screens */
+    background-size: 200% 200%; /* Further adjust gradient animation size */
+    text-align: center; /* Ensure text stays centered */
   }
 }
+
